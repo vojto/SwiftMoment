@@ -20,7 +20,8 @@ Pod::Spec.new do |s|
   s.author             = { "Adrian Kosmaczewski" => "akosma@me.com" }
   s.social_media_url   = "http://twitter.com/akosma"
 
-  s.platform     = :ios, "8.0"
+  s.ios.deployment_target = '8.0'
+	s.osx.deployment_target = '10.9'
   s.source       = { :git => "https://github.com/akosma/SwiftMoment.git", :tag => "v0.4" }
   s.source_files  = "SwiftMoment/SwiftMoment"
   s.requires_arc = true
